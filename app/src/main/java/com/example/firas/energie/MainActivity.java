@@ -1,14 +1,18 @@
 package com.example.firas.energie;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Calendar;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     private static String email1 = "firaschaabencss@gmail.com";
@@ -19,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
     public void send(View view) {
         EditText text = (EditText)findViewById(R.id.mat);
@@ -51,8 +56,23 @@ public class MainActivity extends AppCompatActivity {
         } catch (android.content.ActivityNotFoundException ex) {
             Toast.makeText(this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
         }
+        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString(matricule, body);
+        editor.commit();
 
+        String readEmail = sharedPref.getString(matricule,"error");
+        System.out.println(readEmail);
+        System.out.println("local test :");
+        System.out.println(matricule +"  " + body);
+        System.out.println("local test2 :");
 
+        SharedPreferences prefs = this.getPreferences(Context.MODE_PRIVATE);
+        Map<String,?> keys = prefs.getAll();
+        System.out.println("test : ");
+        for(Map.Entry<String,?> entry : keys.entrySet()){
+            Log.d("map values",entry.getKey() + ": " +
+                    entry.getValue().toString());
+        }
     }
-
 }
