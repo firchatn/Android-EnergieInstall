@@ -3,6 +3,24 @@
 
     <item
         is-multidex="true"
+        jar="/home/firas/git/Android-EnergieInstall/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/firas/git/Android-EnergieInstall/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_fe4909446270276d372f2df0f541d8a6c42874c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/firas/git/Android-EnergieInstall/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e22c995817abdc8c5fa1b41b0a945ef657ce600d">
+        <dex dex="/home/firas/git/Android-EnergieInstall/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9e13d0dfe3ccbccbe1af940cc149a3550e3d4fc7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/firas/android/Energie/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
