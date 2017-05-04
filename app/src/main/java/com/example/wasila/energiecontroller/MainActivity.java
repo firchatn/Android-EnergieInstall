@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
             String userName = text1.getText().toString();
             EditText text2 = (EditText) findViewById(R.id.password);
             String passWord = text2.getText().toString();
-            System.out.println(userName);
-            System.out.println(passWord);
             if ( userName.equals(user) && passWord.equals(pass)) {
                 Intent intent = new Intent(this, SendMessageActivity.class);
                 startActivity(intent);
