@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EnergieController.iml" filepath="$PROJECT_DIR$/EnergieController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-EnergieInstall.iml" filepath="$PROJECT_DIR$/Android-EnergieInstall.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
